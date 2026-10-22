@@ -276,7 +276,25 @@
     .burger{display:block;}
     nav{background:rgba(251,244,240,.94);}
   }
+
+  .start-here{padding:clamp(3rem,7vw,5.5rem) clamp(1.25rem,5vw,4rem);background:var(--cream);text-align:center}
+  .start-eyebrow{font-size:.75rem;letter-spacing:.3em;text-transform:uppercase;color:var(--copper);font-weight:600;margin-bottom:.8rem}
+  .start-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;max-width:1100px;margin:2.2rem auto 0}
+  .start-card{display:flex;flex-direction:column;align-items:flex-start;gap:.35rem;text-align:left;padding:1.4rem 1.5rem;border:1px solid var(--rose-soft);border-radius:1.2rem;background:#fff;color:var(--ink);transition:transform .25s,border-color .25s,box-shadow .25s;min-height:44px}
+  .start-card:hover,.start-card:focus-visible{transform:translateY(-3px);border-color:var(--copper-light);box-shadow:0 10px 30px rgba(36,21,18,.08)}
+  .start-card b{font-size:1.05rem;color:var(--chocolate)}
+  .start-card span:last-child{font-size:.92rem;color:var(--ink);opacity:.85}
+  .start-ic{font-size:1.5rem}
+  @media (min-width:900px){.start-grid{grid-template-columns:repeat(3,1fr)}}
 </style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"Person","@id":"https://chefanto.com/#chef-anto","name":"Antoanela Alexander","alternateName":["Chef Anto","Chef Anto AI"],"jobTitle":"Chef and founder","url":"https://chefanto.com/","description":"Miami-based chef and entrepreneur, born in Bucharest, Romania. I am the heart. AI is the brain.","worksFor":{"@id":"https://chefanto.com/#chef-anto-ai"},
+  "sameAs":["https://chef-antoai.netlify.app/","https://www.instagram.com/chefanto_ai","https://www.instagram.com/antoanelalexander","https://www.tiktok.com/@chefantoai","https://www.youtube.com/@chefantoai","https://www.facebook.com/antoanela.alexander","https://github.com/chefantoai","https://open.spotify.com/show/5xqzoziGh1hvbYfht8GDqi"]},
+ {"@type":"Organization","@id":"https://chefanto.com/#chef-anto-ai","name":"Chef Anto AI","legalName":"Chic Cuisine Ecom LLC","url":"https://chefanto.com/","logo":"https://chefanto.com/favicon.png","founder":{"@id":"https://chefanto.com/#chef-anto"}},
+ {"@type":"WebSite","@id":"https://chefanto.com/#site","name":"Chef Anto","url":"https://chefanto.com/","publisher":{"@id":"https://chefanto.com/#chef-anto-ai"}},
+ {"@type":"PodcastSeries","name":"HubChefAnto AI","url":"https://open.spotify.com/show/5xqzoziGh1hvbYfht8GDqi","author":{"@id":"https://chefanto.com/#chef-anto"},"inLanguage":["en","ro"]}]}
+</script>
 </head>
 <body>
 
@@ -329,6 +347,21 @@
     <span>Larder — Fridge to Recipe</span><span class="dot">✦</span>
   </div>
 </div>
+
+
+<!-- Start here: one place for everything Chef Anto (added 2026-10-22) -->
+<section class="start-here reveal" id="start" aria-labelledby="start-title">
+  <p class="start-eyebrow">Start here</p>
+  <h2 class="section-title" id="start-title">Everything I make, <em>in one place</em></h2>
+  <div class="start-grid">
+    <a class="start-card" href="https://fridge-magic-maker-17.lovable.app/" target="_blank" rel="noopener"><span class="start-ic" aria-hidden="true">🥦</span><b>Try Fridge Chef AI</b><span>Snap your fridge, get dinner.</span></a>
+    <a class="start-card" href="https://elevenlabs.io/app/talk-to?agent_id=agent_8501m4f8x8fde93vbagfzts8y99x" target="_blank" rel="noopener"><span class="start-ic" aria-hidden="true">🎙️</span><b>Ask Chef Anto</b><span>Cooking advice in my voice, English or Romanian.</span></a>
+    <a class="start-card" href="https://open.spotify.com/show/5xqzoziGh1hvbYfht8GDqi" target="_blank" rel="noopener"><span class="start-ic" aria-hidden="true">🎧</span><b>Listen to the podcast</b><span>HubChefAnto AI food stories.</span></a>
+    <a class="start-card" href="#experiences"><span class="start-ic" aria-hidden="true">🍷</span><b>Book a dinner</b><span>Baba Tuesdays and Dream House.</span></a>
+    <a class="start-card" href="https://chef-antoai.netlify.app/services" target="_blank" rel="noopener"><span class="start-ic" aria-hidden="true">🤝</span><b>Work with me</b><span>AI marketing for food businesses.</span></a>
+    <a class="start-card" href="https://chef-antoai.netlify.app/" target="_blank" rel="noopener"><span class="start-ic" aria-hidden="true">✨</span><b>See my AI work</b><span>Agents, apps and projects.</span></a>
+  </div>
+</section>
 
 <section class="story reveal" id="story">
   <div>
